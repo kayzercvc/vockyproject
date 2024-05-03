@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocky's Project</title>
+    <link rel="icon" type="image/png" href="fav.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #212121;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 0 10px #FCFCFC, 0 0 20px #FCFCFC, 0 0 40px #FCFCFC
+        }
+        .block {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+        .block img {
+            width: 180px;
+            height: 180px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .button {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --white: #ffffff;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  border-radius: 8px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 15px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  font-weight: 700;
+  transition-duration: .2s;
+  background-color: var(--ch-black);
+}
+
+.button:before, .button:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, 
+  var(--ch-black), var(--eer-black),
+  var(--night-rider), var(--ch-white), var(--night-rider), 
+    var(--eer-black), var(--ch-black),var(--ch-black));
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button:after {
+  filter: blur(50px);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vocky</h1>
+        <div class="block">
+            <img src="image1.jpg" alt="DRAGON">
+            <h2>Dragon VPS Manager</h2><br>
+            <a href="dragon.html" class="button">Перейти</a>
+        </div>
+        <div class="block">
+            <img src="image2.jpg" alt="MARZBAN">
+            <h2>Marzban</h2><br>
+            <a href="marzban.html" class="button">Перейти</a>
+        </div>
+        <div class="block">
+            <img src="image3.jpg" alt="YORU">
+            <h2>Yoru's Script</h2><br>
+            <a href="yoru.html" class="button">Перейти</a>
+        </div>
+                <div class="block">
+            <img src="image4.jpg" alt="3X UI">
+            <h2>3X-UI</h2><br>
+            <a href="3xui.html" class="button">Перейти</a>
+        </div>
+                        <div class="block">
+            <img src="image5.jpg" alt="HIDDIFY">
+            <h2>Hiddify</h2><br>
+            <a href="hiddify.html" class="button">Перейти</a>
+        </div>
+                                <div class="block">
+            <img src="image3.jpg" alt="X UI">
+            <h2>X-UI</h2><br>
+            <a href="xui.html" class="button">Перейти</a>
+        </div>
+    </div>
+</body>
+</html>
